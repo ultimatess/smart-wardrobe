@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+# Personal data never leaves the device / never gets committed
+data/
+build.log

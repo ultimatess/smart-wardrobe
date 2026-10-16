@@ -1,0 +1,2315 @@
+{
+ "hash": "aa55a639537d7a84",
+ "vibes": [
+  "Work",
+  "Casual",
+  "Festive",
+  "Travel"
+ ],
+ "seasons": [
+  "Summer/Humid",
+  "Monsoon",
+  "Mild/Winter"
+ ],
+ "rows": [
+  {
+   "axis": "category",
+   "label": "kurta pajama",
+   "style": "indian",
+   "vibes": [
+    "Festive",
+    "Casual"
+   ],
+   "seasons": [
+    "Summer/Humid",
+    "Monsoon",
+    "Mild/Winter"
+   ],
+   "prompts": [
+    "a photo of a person wearing kurta pajama",
+    "an outfit consisting of kurta pajama",
+    "kurta pajama clothing",
+    "a photo of a person wearing kurta with pyjama",
+    "an outfit consisting of kurta with pyjama",
+    "kurta with pyjama clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "cotton kurta",
+   "style": "indian",
+   "vibes": [
+    "Casual",
+    "Work"
+   ],
+   "seasons": [
+    "Summer/Humid",
+    "Monsoon"
+   ],
+   "prompts": [
+    "a photo of a person wearing cotton kurta",
+    "an outfit consisting of cotton kurta",
+    "cotton kurta clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "linen kurta",
+   "style": "indian",
+   "vibes": [
+    "Work",
+    "Casual"
+   ],
+   "seasons": [
+    "Summer/Humid"
+   ],
+   "prompts": [
+    "a photo of a person wearing linen kurta",
+    "an outfit consisting of linen kurta",
+    "linen kurta clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "silk kurta",
+   "style": "indian",
+   "vibes": [
+    "Festive"
+   ],
+   "seasons": [
+    "Mild/Winter",
+    "Monsoon"
+   ],
+   "prompts": [
+    "a photo of a person wearing silk kurta",
+    "an outfit consisting of silk kurta",
+    "silk kurta clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "short kurta with jeans",
+   "style": "fusion",
+   "vibes": [
+    "Casual",
+    "Travel"
+   ],
+   "seasons": [
+    "Summer/Humid",
+    "Monsoon"
+   ],
+   "prompts": [
+    "a photo of a person wearing short kurta with jeans",
+    "an outfit consisting of short kurta with jeans",
+    "short kurta with jeans clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "nehru jacket over kurta",
+   "style": "indian",
+   "vibes": [
+    "Festive",
+    "Work"
+   ],
+   "seasons": [
+    "Mild/Winter",
+    "Monsoon"
+   ],
+   "prompts": [
+    "a photo of a person wearing nehru jacket over kurta",
+    "an outfit consisting of nehru jacket over kurta",
+    "nehru jacket over kurta clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "bandhgala suit",
+   "style": "indian",
+   "vibes": [
+    "Festive",
+    "Work"
+   ],
+   "seasons": [
+    "Mild/Winter"
+   ],
+   "prompts": [
+    "a photo of a person wearing bandhgala suit",
+    "an outfit consisting of bandhgala suit",
+    "bandhgala suit clothing",
+    "a photo of a person wearing jodhpuri suit",
+    "an outfit consisting of jodhpuri suit",
+    "jodhpuri suit clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "sherwani",
+   "style": "indian",
+   "vibes": [
+    "Festive"
+   ],
+   "seasons": [
+    "Mild/Winter"
+   ],
+   "prompts": [
+    "a photo of a person wearing sherwani",
+    "an outfit consisting of sherwani",
+    "sherwani clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "indo-western sherwani",
+   "style": "fusion",
+   "vibes": [
+    "Festive"
+   ],
+   "seasons": [
+    "Mild/Winter"
+   ],
+   "prompts": [
+    "a photo of a person wearing indo-western sherwani",
+    "an outfit consisting of indo-western sherwani",
+    "indo-western sherwani clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "silk dhoti with kurta",
+   "style": "indian",
+   "vibes": [
+    "Festive"
+   ],
+   "seasons": [
+    "Summer/Humid",
+    "Mild/Winter"
+   ],
+   "prompts": [
+    "a photo of a person wearing silk dhoti with kurta",
+    "an outfit consisting of silk dhoti with kurta",
+    "silk dhoti with kurta clothing",
+    "a photo of a person wearing veshti",
+    "an outfit consisting of veshti",
+    "veshti clothing",
+    "a photo of a person wearing panche",
+    "an outfit consisting of panche",
+    "panche clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "mundu",
+   "style": "indian",
+   "vibes": [
+    "Festive",
+    "Casual"
+   ],
+   "seasons": [
+    "Summer/Humid"
+   ],
+   "prompts": [
+    "a photo of a person wearing mundu",
+    "an outfit consisting of mundu",
+    "mundu clothing",
+    "a photo of a person wearing kerala mundu",
+    "an outfit consisting of kerala mundu",
+    "kerala mundu clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "pathani suit",
+   "style": "indian",
+   "vibes": [
+    "Casual",
+    "Festive"
+   ],
+   "seasons": [
+    "Summer/Humid",
+    "Monsoon",
+    "Mild/Winter"
+   ],
+   "prompts": [
+    "a photo of a person wearing pathani suit",
+    "an outfit consisting of pathani suit",
+    "pathani suit clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "achkan",
+   "style": "indian",
+   "vibes": [
+    "Festive"
+   ],
+   "seasons": [
+    "Mild/Winter"
+   ],
+   "prompts": [
+    "a photo of a person wearing achkan",
+    "an outfit consisting of achkan",
+    "achkan clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "lungi",
+   "style": "indian",
+   "vibes": [
+    "Casual"
+   ],
+   "seasons": [
+    "Summer/Humid",
+    "Monsoon"
+   ],
+   "prompts": [
+    "a photo of a person wearing lungi",
+    "an outfit consisting of lungi",
+    "lungi clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "silk saree",
+   "style": "indian",
+   "vibes": [
+    "Festive"
+   ],
+   "seasons": [
+    "Mild/Winter",
+    "Summer/Humid"
+   ],
+   "prompts": [
+    "a photo of a person wearing silk saree",
+    "an outfit consisting of silk saree",
+    "silk saree clothing",
+    "a photo of a person wearing kanjeevaram saree",
+    "an outfit consisting of kanjeevaram saree",
+    "kanjeevaram saree clothing",
+    "a photo of a person wearing banarasi saree",
+    "an outfit consisting of banarasi saree",
+    "banarasi saree clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "cotton saree",
+   "style": "indian",
+   "vibes": [
+    "Work",
+    "Casual"
+   ],
+   "seasons": [
+    "Summer/Humid",
+    "Monsoon"
+   ],
+   "prompts": [
+    "a photo of a person wearing cotton saree",
+    "an outfit consisting of cotton saree",
+    "cotton saree clothing",
+    "a photo of a person wearing handloom saree",
+    "an outfit consisting of handloom saree",
+    "handloom saree clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "chiffon saree",
+   "style": "indian",
+   "vibes": [
+    "Festive",
+    "Casual"
+   ],
+   "seasons": [
+    "Summer/Humid",
+    "Monsoon"
+   ],
+   "prompts": [
+    "a photo of a person wearing chiffon saree",
+    "an outfit consisting of chiffon saree",
+    "chiffon saree clothing",
+    "a photo of a person wearing georgette saree",
+    "an outfit consisting of georgette saree",
+    "georgette saree clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "linen saree",
+   "style": "indian",
+   "vibes": [
+    "Work"
+   ],
+   "seasons": [
+    "Summer/Humid"
+   ],
+   "prompts": [
+    "a photo of a person wearing linen saree",
+    "an outfit consisting of linen saree",
+    "linen saree clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "pre-draped saree",
+   "style": "fusion",
+   "vibes": [
+    "Festive"
+   ],
+   "seasons": [
+    "Summer/Humid",
+    "Monsoon",
+    "Mild/Winter"
+   ],
+   "prompts": [
+    "a photo of a person wearing pre-draped saree",
+    "an outfit consisting of pre-draped saree",
+    "pre-draped saree clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "salwar kameez",
+   "style": "indian",
+   "vibes": [
+    "Casual",
+    "Work"
+   ],
+   "seasons": [
+    "Summer/Humid",
+    "Monsoon",
+    "Mild/Winter"
+   ],
+   "prompts": [
+    "a photo of a person wearing salwar kameez",
+    "an outfit consisting of salwar kameez",
+    "salwar kameez clothing",
+    "a photo of a person wearing salwar suit",
+    "an outfit consisting of salwar suit",
+    "salwar suit clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "anarkali suit",
+   "style": "indian",
+   "vibes": [
+    "Festive"
+   ],
+   "seasons": [
+    "Mild/Winter",
+    "Summer/Humid"
+   ],
+   "prompts": [
+    "a photo of a person wearing anarkali suit",
+    "an outfit consisting of anarkali suit",
+    "anarkali suit clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "churidar kurta",
+   "style": "indian",
+   "vibes": [
+    "Work",
+    "Casual"
+   ],
+   "seasons": [
+    "Summer/Humid",
+    "Monsoon",
+    "Mild/Winter"
+   ],
+   "prompts": [
+    "a photo of a person wearing churidar kurta",
+    "an outfit consisting of churidar kurta",
+    "churidar kurta clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "kurti with leggings",
+   "style": "indian",
+   "vibes": [
+    "Work",
+    "Casual",
+    "Travel"
+   ],
+   "seasons": [
+    "Summer/Humid",
+    "Monsoon"
+   ],
+   "prompts": [
+    "a photo of a person wearing kurti with leggings",
+    "an outfit consisting of kurti with leggings",
+    "kurti with leggings clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "straight kurta with palazzo",
+   "style": "fusion",
+   "vibes": [
+    "Work",
+    "Casual"
+   ],
+   "seasons": [
+    "Summer/Humid",
+    "Monsoon"
+   ],
+   "prompts": [
+    "a photo of a person wearing straight kurta with palazzo",
+    "an outfit consisting of straight kurta with palazzo",
+    "straight kurta with palazzo clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "sharara set",
+   "style": "indian",
+   "vibes": [
+    "Festive"
+   ],
+   "seasons": [
+    "Mild/Winter"
+   ],
+   "prompts": [
+    "a photo of a person wearing sharara set",
+    "an outfit consisting of sharara set",
+    "sharara set clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "lehenga choli",
+   "style": "indian",
+   "vibes": [
+    "Festive"
+   ],
+   "seasons": [
+    "Mild/Winter"
+   ],
+   "prompts": [
+    "a photo of a person wearing lehenga choli",
+    "an outfit consisting of lehenga choli",
+    "lehenga choli clothing",
+    "a photo of a person wearing ghagra choli",
+    "an outfit consisting of ghagra choli",
+    "ghagra choli clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "half saree",
+   "style": "indian",
+   "vibes": [
+    "Festive"
+   ],
+   "seasons": [
+    "Summer/Humid",
+    "Monsoon",
+    "Mild/Winter"
+   ],
+   "prompts": [
+    "a photo of a person wearing half saree",
+    "an outfit consisting of half saree",
+    "half saree clothing",
+    "a photo of a person wearing langa voni",
+    "an outfit consisting of langa voni",
+    "langa voni clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "patiala suit",
+   "style": "indian",
+   "vibes": [
+    "Casual",
+    "Festive"
+   ],
+   "seasons": [
+    "Mild/Winter"
+   ],
+   "prompts": [
+    "a photo of a person wearing patiala suit",
+    "an outfit consisting of patiala suit",
+    "patiala suit clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "kaftan",
+   "style": "fusion",
+   "vibes": [
+    "Casual",
+    "Travel"
+   ],
+   "seasons": [
+    "Summer/Humid"
+   ],
+   "prompts": [
+    "a photo of a person wearing kaftan",
+    "an outfit consisting of kaftan",
+    "kaftan clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "indo-western gown",
+   "style": "fusion",
+   "vibes": [
+    "Festive"
+   ],
+   "seasons": [
+    "Mild/Winter"
+   ],
+   "prompts": [
+    "a photo of a person wearing indo-western gown",
+    "an outfit consisting of indo-western gown",
+    "indo-western gown clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "dhoti pants with crop top",
+   "style": "fusion",
+   "vibes": [
+    "Festive",
+    "Casual"
+   ],
+   "seasons": [
+    "Summer/Humid"
+   ],
+   "prompts": [
+    "a photo of a person wearing dhoti pants with crop top",
+    "an outfit consisting of dhoti pants with crop top",
+    "dhoti pants with crop top clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "kurta with denim jacket",
+   "style": "fusion",
+   "vibes": [
+    "Casual",
+    "Travel"
+   ],
+   "seasons": [
+    "Mild/Winter",
+    "Monsoon"
+   ],
+   "prompts": [
+    "a photo of a person wearing kurta with denim jacket",
+    "an outfit consisting of kurta with denim jacket",
+    "kurta with denim jacket clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "angrakha kurta",
+   "style": "indian",
+   "vibes": [
+    "Festive",
+    "Casual"
+   ],
+   "seasons": [
+    "Summer/Humid",
+    "Mild/Winter"
+   ],
+   "prompts": [
+    "a photo of a person wearing angrakha kurta",
+    "an outfit consisting of angrakha kurta",
+    "angrakha kurta clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "kurta churidar for men",
+   "style": "indian",
+   "vibes": [
+    "Festive",
+    "Work"
+   ],
+   "seasons": [
+    "Summer/Humid",
+    "Monsoon",
+    "Mild/Winter"
+   ],
+   "prompts": [
+    "a photo of a person wearing kurta churidar for men",
+    "an outfit consisting of kurta churidar for men",
+    "kurta churidar for men clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "palazzo suit with dupatta",
+   "style": "indian",
+   "vibes": [
+    "Casual",
+    "Work"
+   ],
+   "seasons": [
+    "Summer/Humid",
+    "Monsoon"
+   ],
+   "prompts": [
+    "a photo of a person wearing palazzo suit with dupatta",
+    "an outfit consisting of palazzo suit with dupatta",
+    "palazzo suit with dupatta clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "mekhela chador",
+   "style": "indian",
+   "vibes": [
+    "Festive"
+   ],
+   "seasons": [
+    "Summer/Humid",
+    "Monsoon",
+    "Mild/Winter"
+   ],
+   "prompts": [
+    "a photo of a person wearing mekhela chador",
+    "an outfit consisting of mekhela chador",
+    "mekhela chador clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "kasavu saree",
+   "style": "indian",
+   "vibes": [
+    "Festive"
+   ],
+   "seasons": [
+    "Summer/Humid",
+    "Mild/Winter"
+   ],
+   "prompts": [
+    "a photo of a person wearing kasavu saree",
+    "an outfit consisting of kasavu saree",
+    "kasavu saree clothing",
+    "a photo of a person wearing kerala set-mundu",
+    "an outfit consisting of kerala set-mundu",
+    "kerala set-mundu clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "paithani saree",
+   "style": "indian",
+   "vibes": [
+    "Festive"
+   ],
+   "seasons": [
+    "Mild/Winter"
+   ],
+   "prompts": [
+    "a photo of a person wearing paithani saree",
+    "an outfit consisting of paithani saree",
+    "paithani saree clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "ikat handloom saree",
+   "style": "indian",
+   "vibes": [
+    "Work",
+    "Festive"
+   ],
+   "seasons": [
+    "Summer/Humid",
+    "Monsoon"
+   ],
+   "prompts": [
+    "a photo of a person wearing ikat handloom saree",
+    "an outfit consisting of ikat handloom saree",
+    "ikat handloom saree clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "saree with belt and blazer",
+   "style": "fusion",
+   "vibes": [
+    "Work",
+    "Festive"
+   ],
+   "seasons": [
+    "Mild/Winter"
+   ],
+   "prompts": [
+    "a photo of a person wearing saree with belt and blazer",
+    "an outfit consisting of saree with belt and blazer",
+    "saree with belt and blazer clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "kurta with formal trousers",
+   "style": "fusion",
+   "vibes": [
+    "Work"
+   ],
+   "seasons": [
+    "Summer/Humid",
+    "Monsoon"
+   ],
+   "prompts": [
+    "a photo of a person wearing kurta with formal trousers",
+    "an outfit consisting of kurta with formal trousers",
+    "kurta with formal trousers clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "nehru jacket with shirt and trousers",
+   "style": "fusion",
+   "vibes": [
+    "Work",
+    "Festive"
+   ],
+   "seasons": [
+    "Mild/Winter",
+    "Monsoon"
+   ],
+   "prompts": [
+    "a photo of a person wearing nehru jacket with shirt and trousers",
+    "an outfit consisting of nehru jacket with shirt and trousers",
+    "nehru jacket with shirt and trousers clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "dhoti salwar with short kurti",
+   "style": "fusion",
+   "vibes": [
+    "Casual",
+    "Festive"
+   ],
+   "seasons": [
+    "Summer/Humid"
+   ],
+   "prompts": [
+    "a photo of a person wearing dhoti salwar with short kurti",
+    "an outfit consisting of dhoti salwar with short kurti",
+    "dhoti salwar with short kurti clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "ethnic skirt with crop top",
+   "style": "fusion",
+   "vibes": [
+    "Festive",
+    "Casual"
+   ],
+   "seasons": [
+    "Summer/Humid",
+    "Mild/Winter"
+   ],
+   "prompts": [
+    "a photo of a person wearing ethnic skirt with crop top",
+    "an outfit consisting of ethnic skirt with crop top",
+    "ethnic skirt with crop top clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "cape-style indo-western outfit",
+   "style": "fusion",
+   "vibes": [
+    "Festive"
+   ],
+   "seasons": [
+    "Mild/Winter"
+   ],
+   "prompts": [
+    "a photo of a person wearing cape-style indo-western outfit",
+    "an outfit consisting of cape-style indo-western outfit",
+    "cape-style indo-western outfit clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "formal shirt with trousers",
+   "style": "western",
+   "vibes": [
+    "Work"
+   ],
+   "seasons": [
+    "Summer/Humid",
+    "Monsoon",
+    "Mild/Winter"
+   ],
+   "prompts": [
+    "a photo of a person wearing formal shirt with trousers",
+    "an outfit consisting of formal shirt with trousers",
+    "formal shirt with trousers clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "shirt and chinos",
+   "style": "western",
+   "vibes": [
+    "Work",
+    "Casual"
+   ],
+   "seasons": [
+    "Summer/Humid",
+    "Monsoon",
+    "Mild/Winter"
+   ],
+   "prompts": [
+    "a photo of a person wearing shirt and chinos",
+    "an outfit consisting of shirt and chinos",
+    "shirt and chinos clothing",
+    "a photo of a person wearing smart casual shirt and chinos",
+    "an outfit consisting of smart casual shirt and chinos",
+    "smart casual shirt and chinos clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "two-piece business suit",
+   "style": "western",
+   "vibes": [
+    "Work",
+    "Festive"
+   ],
+   "seasons": [
+    "Mild/Winter"
+   ],
+   "prompts": [
+    "a photo of a person wearing two-piece business suit",
+    "an outfit consisting of two-piece business suit",
+    "two-piece business suit clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "blazer with trousers",
+   "style": "western",
+   "vibes": [
+    "Work"
+   ],
+   "seasons": [
+    "Mild/Winter",
+    "Monsoon"
+   ],
+   "prompts": [
+    "a photo of a person wearing blazer with trousers",
+    "an outfit consisting of blazer with trousers",
+    "blazer with trousers clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "blazer with jeans",
+   "style": "western",
+   "vibes": [
+    "Work",
+    "Casual"
+   ],
+   "seasons": [
+    "Mild/Winter"
+   ],
+   "prompts": [
+    "a photo of a person wearing blazer with jeans",
+    "an outfit consisting of blazer with jeans",
+    "blazer with jeans clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "polo t-shirt with chinos",
+   "style": "western",
+   "vibes": [
+    "Work",
+    "Casual",
+    "Travel"
+   ],
+   "seasons": [
+    "Summer/Humid",
+    "Monsoon"
+   ],
+   "prompts": [
+    "a photo of a person wearing polo t-shirt with chinos",
+    "an outfit consisting of polo t-shirt with chinos",
+    "polo t-shirt with chinos clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "sheath dress",
+   "style": "western",
+   "vibes": [
+    "Work"
+   ],
+   "seasons": [
+    "Summer/Humid",
+    "Monsoon",
+    "Mild/Winter"
+   ],
+   "prompts": [
+    "a photo of a person wearing sheath dress",
+    "an outfit consisting of sheath dress",
+    "sheath dress clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "blouse with pencil skirt",
+   "style": "western",
+   "vibes": [
+    "Work"
+   ],
+   "seasons": [
+    "Summer/Humid",
+    "Monsoon",
+    "Mild/Winter"
+   ],
+   "prompts": [
+    "a photo of a person wearing blouse with pencil skirt",
+    "an outfit consisting of blouse with pencil skirt",
+    "blouse with pencil skirt clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "pantsuit",
+   "style": "western",
+   "vibes": [
+    "Work"
+   ],
+   "seasons": [
+    "Mild/Winter"
+   ],
+   "prompts": [
+    "a photo of a person wearing pantsuit",
+    "an outfit consisting of pantsuit",
+    "pantsuit clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "formal waistcoat with shirt",
+   "style": "western",
+   "vibes": [
+    "Work",
+    "Festive"
+   ],
+   "seasons": [
+    "Mild/Winter"
+   ],
+   "prompts": [
+    "a photo of a person wearing formal waistcoat with shirt",
+    "an outfit consisting of formal waistcoat with shirt",
+    "formal waistcoat with shirt clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "t-shirt and jeans",
+   "style": "western",
+   "vibes": [
+    "Casual",
+    "Travel"
+   ],
+   "seasons": [
+    "Summer/Humid",
+    "Monsoon",
+    "Mild/Winter"
+   ],
+   "prompts": [
+    "a photo of a person wearing t-shirt and jeans",
+    "an outfit consisting of t-shirt and jeans",
+    "t-shirt and jeans clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "graphic tee with shorts",
+   "style": "western",
+   "vibes": [
+    "Casual",
+    "Travel"
+   ],
+   "seasons": [
+    "Summer/Humid"
+   ],
+   "prompts": [
+    "a photo of a person wearing graphic tee with shorts",
+    "an outfit consisting of graphic tee with shorts",
+    "graphic tee with shorts clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "linen shirt with shorts",
+   "style": "western",
+   "vibes": [
+    "Casual",
+    "Travel"
+   ],
+   "seasons": [
+    "Summer/Humid"
+   ],
+   "prompts": [
+    "a photo of a person wearing linen shirt with shorts",
+    "an outfit consisting of linen shirt with shorts",
+    "linen shirt with shorts clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "henley with jeans",
+   "style": "western",
+   "vibes": [
+    "Casual"
+   ],
+   "seasons": [
+    "Mild/Winter"
+   ],
+   "prompts": [
+    "a photo of a person wearing henley with jeans",
+    "an outfit consisting of henley with jeans",
+    "henley with jeans clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "hoodie and joggers",
+   "style": "western",
+   "vibes": [
+    "Casual",
+    "Travel"
+   ],
+   "seasons": [
+    "Mild/Winter"
+   ],
+   "prompts": [
+    "a photo of a person wearing hoodie and joggers",
+    "an outfit consisting of hoodie and joggers",
+    "hoodie and joggers clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "sweater with jeans",
+   "style": "western",
+   "vibes": [
+    "Casual"
+   ],
+   "seasons": [
+    "Mild/Winter"
+   ],
+   "prompts": [
+    "a photo of a person wearing sweater with jeans",
+    "an outfit consisting of sweater with jeans",
+    "sweater with jeans clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "denim jacket with t-shirt",
+   "style": "western",
+   "vibes": [
+    "Casual",
+    "Travel"
+   ],
+   "seasons": [
+    "Mild/Winter"
+   ],
+   "prompts": [
+    "a photo of a person wearing denim jacket with t-shirt",
+    "an outfit consisting of denim jacket with t-shirt",
+    "denim jacket with t-shirt clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "leather jacket outfit",
+   "style": "western",
+   "vibes": [
+    "Casual",
+    "Festive"
+   ],
+   "seasons": [
+    "Mild/Winter"
+   ],
+   "prompts": [
+    "a photo of a person wearing leather jacket outfit",
+    "an outfit consisting of leather jacket outfit",
+    "leather jacket outfit clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "summer sundress",
+   "style": "western",
+   "vibes": [
+    "Casual",
+    "Travel"
+   ],
+   "seasons": [
+    "Summer/Humid"
+   ],
+   "prompts": [
+    "a photo of a person wearing summer sundress",
+    "an outfit consisting of summer sundress",
+    "summer sundress clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "maxi dress",
+   "style": "western",
+   "vibes": [
+    "Casual",
+    "Festive",
+    "Travel"
+   ],
+   "seasons": [
+    "Summer/Humid"
+   ],
+   "prompts": [
+    "a photo of a person wearing maxi dress",
+    "an outfit consisting of maxi dress",
+    "maxi dress clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "crop top with jeans",
+   "style": "western",
+   "vibes": [
+    "Casual"
+   ],
+   "seasons": [
+    "Summer/Humid"
+   ],
+   "prompts": [
+    "a photo of a person wearing crop top with jeans",
+    "an outfit consisting of crop top with jeans",
+    "crop top with jeans clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "jumpsuit",
+   "style": "western",
+   "vibes": [
+    "Casual",
+    "Work"
+   ],
+   "seasons": [
+    "Summer/Humid",
+    "Monsoon",
+    "Mild/Winter"
+   ],
+   "prompts": [
+    "a photo of a person wearing jumpsuit",
+    "an outfit consisting of jumpsuit",
+    "jumpsuit clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "co-ord set",
+   "style": "western",
+   "vibes": [
+    "Casual",
+    "Travel",
+    "Work"
+   ],
+   "seasons": [
+    "Summer/Humid",
+    "Monsoon"
+   ],
+   "prompts": [
+    "a photo of a person wearing co-ord set",
+    "an outfit consisting of co-ord set",
+    "co-ord set clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "tracksuit",
+   "style": "western",
+   "vibes": [
+    "Casual",
+    "Travel"
+   ],
+   "seasons": [
+    "Mild/Winter"
+   ],
+   "prompts": [
+    "a photo of a person wearing tracksuit",
+    "an outfit consisting of tracksuit",
+    "tracksuit clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "gym activewear",
+   "style": "western",
+   "vibes": [
+    "Casual"
+   ],
+   "seasons": [
+    "Summer/Humid",
+    "Monsoon",
+    "Mild/Winter"
+   ],
+   "prompts": [
+    "a photo of a person wearing gym activewear",
+    "an outfit consisting of gym activewear",
+    "gym activewear clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "rain jacket outfit",
+   "style": "western",
+   "vibes": [
+    "Travel",
+    "Casual"
+   ],
+   "seasons": [
+    "Monsoon"
+   ],
+   "prompts": [
+    "a photo of a person wearing rain jacket outfit",
+    "an outfit consisting of rain jacket outfit",
+    "rain jacket outfit clothing",
+    "a photo of a person wearing windcheater",
+    "an outfit consisting of windcheater",
+    "windcheater clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "cargo pants with t-shirt",
+   "style": "western",
+   "vibes": [
+    "Casual",
+    "Travel"
+   ],
+   "seasons": [
+    "Summer/Humid",
+    "Monsoon",
+    "Mild/Winter"
+   ],
+   "prompts": [
+    "a photo of a person wearing cargo pants with t-shirt",
+    "an outfit consisting of cargo pants with t-shirt",
+    "cargo pants with t-shirt clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "oxford shirt with jeans",
+   "style": "western",
+   "vibes": [
+    "Casual",
+    "Work"
+   ],
+   "seasons": [
+    "Summer/Humid",
+    "Monsoon",
+    "Mild/Winter"
+   ],
+   "prompts": [
+    "a photo of a person wearing oxford shirt with jeans",
+    "an outfit consisting of oxford shirt with jeans",
+    "oxford shirt with jeans clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "knit sweater with chinos",
+   "style": "western",
+   "vibes": [
+    "Work",
+    "Casual"
+   ],
+   "seasons": [
+    "Mild/Winter"
+   ],
+   "prompts": [
+    "a photo of a person wearing knit sweater with chinos",
+    "an outfit consisting of knit sweater with chinos",
+    "knit sweater with chinos clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "trench coat outfit",
+   "style": "western",
+   "vibes": [
+    "Work",
+    "Travel"
+   ],
+   "seasons": [
+    "Mild/Winter",
+    "Monsoon"
+   ],
+   "prompts": [
+    "a photo of a person wearing trench coat outfit",
+    "an outfit consisting of trench coat outfit",
+    "trench coat outfit clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "puffer jacket outfit",
+   "style": "western",
+   "vibes": [
+    "Travel",
+    "Casual"
+   ],
+   "seasons": [
+    "Mild/Winter"
+   ],
+   "prompts": [
+    "a photo of a person wearing puffer jacket outfit",
+    "an outfit consisting of puffer jacket outfit",
+    "puffer jacket outfit clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "shirt dress",
+   "style": "western",
+   "vibes": [
+    "Work",
+    "Casual"
+   ],
+   "seasons": [
+    "Summer/Humid",
+    "Monsoon"
+   ],
+   "prompts": [
+    "a photo of a person wearing shirt dress",
+    "an outfit consisting of shirt dress",
+    "shirt dress clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "wrap dress",
+   "style": "western",
+   "vibes": [
+    "Work",
+    "Casual"
+   ],
+   "seasons": [
+    "Summer/Humid",
+    "Monsoon",
+    "Mild/Winter"
+   ],
+   "prompts": [
+    "a photo of a person wearing wrap dress",
+    "an outfit consisting of wrap dress",
+    "wrap dress clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "a-line skirt with top",
+   "style": "western",
+   "vibes": [
+    "Casual",
+    "Work"
+   ],
+   "seasons": [
+    "Summer/Humid",
+    "Monsoon"
+   ],
+   "prompts": [
+    "a photo of a person wearing a-line skirt with top",
+    "an outfit consisting of a-line skirt with top",
+    "a-line skirt with top clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "linen trousers with tank top",
+   "style": "western",
+   "vibes": [
+    "Casual",
+    "Travel"
+   ],
+   "seasons": [
+    "Summer/Humid"
+   ],
+   "prompts": [
+    "a photo of a person wearing linen trousers with tank top",
+    "an outfit consisting of linen trousers with tank top",
+    "linen trousers with tank top clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "bermuda shorts with polo",
+   "style": "western",
+   "vibes": [
+    "Casual",
+    "Travel"
+   ],
+   "seasons": [
+    "Summer/Humid"
+   ],
+   "prompts": [
+    "a photo of a person wearing bermuda shorts with polo",
+    "an outfit consisting of bermuda shorts with polo",
+    "bermuda shorts with polo clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "turtleneck with trousers",
+   "style": "western",
+   "vibes": [
+    "Work"
+   ],
+   "seasons": [
+    "Mild/Winter"
+   ],
+   "prompts": [
+    "a photo of a person wearing turtleneck with trousers",
+    "an outfit consisting of turtleneck with trousers",
+    "turtleneck with trousers clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "cardigan over a dress",
+   "style": "western",
+   "vibes": [
+    "Casual",
+    "Work"
+   ],
+   "seasons": [
+    "Mild/Winter"
+   ],
+   "prompts": [
+    "a photo of a person wearing cardigan over a dress",
+    "an outfit consisting of cardigan over a dress",
+    "cardigan over a dress clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "denim overalls",
+   "style": "western",
+   "vibes": [
+    "Casual"
+   ],
+   "seasons": [
+    "Mild/Winter",
+    "Summer/Humid"
+   ],
+   "prompts": [
+    "a photo of a person wearing denim overalls",
+    "an outfit consisting of denim overalls",
+    "denim overalls clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "athleisure joggers with tee",
+   "style": "western",
+   "vibes": [
+    "Casual",
+    "Travel"
+   ],
+   "seasons": [
+    "Summer/Humid",
+    "Monsoon",
+    "Mild/Winter"
+   ],
+   "prompts": [
+    "a photo of a person wearing athleisure joggers with tee",
+    "an outfit consisting of athleisure joggers with tee",
+    "athleisure joggers with tee clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "beach shorts and resort shirt",
+   "style": "western",
+   "vibes": [
+    "Casual",
+    "Travel"
+   ],
+   "seasons": [
+    "Summer/Humid"
+   ],
+   "prompts": [
+    "a photo of a person wearing beach shorts and resort shirt",
+    "an outfit consisting of beach shorts and resort shirt",
+    "beach shorts and resort shirt clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "tuxedo",
+   "style": "western",
+   "vibes": [
+    "Festive"
+   ],
+   "seasons": [
+    "Mild/Winter"
+   ],
+   "prompts": [
+    "a photo of a person wearing tuxedo",
+    "an outfit consisting of tuxedo",
+    "tuxedo clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "cocktail dress",
+   "style": "western",
+   "vibes": [
+    "Festive"
+   ],
+   "seasons": [
+    "Summer/Humid",
+    "Monsoon",
+    "Mild/Winter"
+   ],
+   "prompts": [
+    "a photo of a person wearing cocktail dress",
+    "an outfit consisting of cocktail dress",
+    "cocktail dress clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "evening gown",
+   "style": "western",
+   "vibes": [
+    "Festive"
+   ],
+   "seasons": [
+    "Mild/Winter"
+   ],
+   "prompts": [
+    "a photo of a person wearing evening gown",
+    "an outfit consisting of evening gown",
+    "evening gown clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "party shirt with trousers",
+   "style": "western",
+   "vibes": [
+    "Festive",
+    "Casual"
+   ],
+   "seasons": [
+    "Summer/Humid",
+    "Monsoon",
+    "Mild/Winter"
+   ],
+   "prompts": [
+    "a photo of a person wearing party shirt with trousers",
+    "an outfit consisting of party shirt with trousers",
+    "party shirt with trousers clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "velvet blazer outfit",
+   "style": "western",
+   "vibes": [
+    "Festive"
+   ],
+   "seasons": [
+    "Mild/Winter"
+   ],
+   "prompts": [
+    "a photo of a person wearing velvet blazer outfit",
+    "an outfit consisting of velvet blazer outfit",
+    "velvet blazer outfit clothing"
+   ]
+  },
+  {
+   "axis": "category",
+   "label": "sequin party dress",
+   "style": "western",
+   "vibes": [
+    "Festive"
+   ],
+   "seasons": [
+    "Mild/Winter"
+   ],
+   "prompts": [
+    "a photo of a person wearing sequin party dress",
+    "an outfit consisting of sequin party dress",
+    "sequin party dress clothing"
+   ]
+  },
+  {
+   "axis": "fabric",
+   "label": "linen",
+   "vibes": [
+    "Work",
+    "Casual"
+   ],
+   "seasons": [
+    "Summer/Humid"
+   ],
+   "prompts": [
+    "clothes made of linen fabric",
+    "a linen outfit"
+   ]
+  },
+  {
+   "axis": "fabric",
+   "label": "cotton",
+   "vibes": [
+    "Work",
+    "Casual",
+    "Travel"
+   ],
+   "seasons": [
+    "Summer/Humid",
+    "Monsoon"
+   ],
+   "prompts": [
+    "clothes made of cotton fabric",
+    "a cotton outfit"
+   ]
+  },
+  {
+   "axis": "fabric",
+   "label": "khadi",
+   "vibes": [
+    "Work",
+    "Casual"
+   ],
+   "seasons": [
+    "Summer/Humid"
+   ],
+   "prompts": [
+    "clothes made of khadi fabric",
+    "a khadi outfit"
+   ]
+  },
+  {
+   "axis": "fabric",
+   "label": "silk",
+   "vibes": [
+    "Festive"
+   ],
+   "seasons": [
+    "Mild/Winter"
+   ],
+   "prompts": [
+    "clothes made of silk fabric",
+    "a silk outfit"
+   ]
+  },
+  {
+   "axis": "fabric",
+   "label": "raw silk",
+   "vibes": [
+    "Festive"
+   ],
+   "seasons": [
+    "Mild/Winter"
+   ],
+   "prompts": [
+    "clothes made of raw silk fabric",
+    "a raw silk outfit"
+   ]
+  },
+  {
+   "axis": "fabric",
+   "label": "chiffon",
+   "vibes": [
+    "Festive",
+    "Casual"
+   ],
+   "seasons": [
+    "Summer/Humid",
+    "Monsoon"
+   ],
+   "prompts": [
+    "clothes made of chiffon fabric",
+    "a chiffon outfit"
+   ]
+  },
+  {
+   "axis": "fabric",
+   "label": "georgette",
+   "vibes": [
+    "Festive",
+    "Casual"
+   ],
+   "seasons": [
+    "Monsoon",
+    "Summer/Humid"
+   ],
+   "prompts": [
+    "clothes made of georgette fabric",
+    "a georgette outfit"
+   ]
+  },
+  {
+   "axis": "fabric",
+   "label": "denim",
+   "vibes": [
+    "Casual",
+    "Travel"
+   ],
+   "seasons": [
+    "Mild/Winter",
+    "Monsoon"
+   ],
+   "prompts": [
+    "clothes made of denim fabric",
+    "a denim outfit"
+   ]
+  },
+  {
+   "axis": "fabric",
+   "label": "wool",
+   "vibes": [
+    "Work",
+    "Festive"
+   ],
+   "seasons": [
+    "Mild/Winter"
+   ],
+   "prompts": [
+    "clothes made of wool fabric",
+    "a wool outfit"
+   ]
+  },
+  {
+   "axis": "fabric",
+   "label": "tweed",
+   "vibes": [
+    "Work"
+   ],
+   "seasons": [
+    "Mild/Winter"
+   ],
+   "prompts": [
+    "clothes made of tweed fabric",
+    "a tweed outfit"
+   ]
+  },
+  {
+   "axis": "fabric",
+   "label": "velvet",
+   "vibes": [
+    "Festive"
+   ],
+   "seasons": [
+    "Mild/Winter"
+   ],
+   "prompts": [
+    "clothes made of velvet fabric",
+    "a velvet outfit"
+   ]
+  },
+  {
+   "axis": "fabric",
+   "label": "polyester",
+   "vibes": [
+    "Work",
+    "Travel"
+   ],
+   "seasons": [
+    "Monsoon"
+   ],
+   "prompts": [
+    "clothes made of polyester fabric",
+    "a polyester outfit"
+   ]
+  },
+  {
+   "axis": "fabric",
+   "label": "rayon",
+   "vibes": [
+    "Casual"
+   ],
+   "seasons": [
+    "Summer/Humid",
+    "Monsoon"
+   ],
+   "prompts": [
+    "clothes made of rayon fabric",
+    "a rayon outfit"
+   ]
+  },
+  {
+   "axis": "fabric",
+   "label": "knit jersey",
+   "vibes": [
+    "Casual",
+    "Travel"
+   ],
+   "seasons": [
+    "Summer/Humid",
+    "Monsoon",
+    "Mild/Winter"
+   ],
+   "prompts": [
+    "clothes made of knit jersey fabric",
+    "a knit jersey outfit"
+   ]
+  },
+  {
+   "axis": "fabric",
+   "label": "leather",
+   "vibes": [
+    "Casual",
+    "Festive"
+   ],
+   "seasons": [
+    "Mild/Winter"
+   ],
+   "prompts": [
+    "clothes made of leather fabric",
+    "a leather outfit"
+   ]
+  },
+  {
+   "axis": "fabric",
+   "label": "brocade",
+   "vibes": [
+    "Festive"
+   ],
+   "seasons": [
+    "Mild/Winter"
+   ],
+   "prompts": [
+    "clothes made of brocade fabric",
+    "a brocade outfit"
+   ]
+  },
+  {
+   "axis": "fabric",
+   "label": "organza",
+   "vibes": [
+    "Festive"
+   ],
+   "seasons": [
+    "Mild/Winter",
+    "Summer/Humid"
+   ],
+   "prompts": [
+    "clothes made of organza fabric",
+    "a organza outfit"
+   ]
+  },
+  {
+   "axis": "fabric",
+   "label": "chikankari embroidered cotton",
+   "vibes": [
+    "Festive",
+    "Casual"
+   ],
+   "seasons": [
+    "Summer/Humid"
+   ],
+   "prompts": [
+    "clothes made of chikankari embroidered cotton fabric",
+    "a chikankari embroidered cotton outfit"
+   ]
+  },
+  {
+   "axis": "color",
+   "label": "white",
+   "prompts": [
+    "a person wearing white clothes",
+    "a white coloured outfit"
+   ]
+  },
+  {
+   "axis": "color",
+   "label": "off-white cream",
+   "prompts": [
+    "a person wearing off-white cream clothes",
+    "a off-white cream coloured outfit"
+   ]
+  },
+  {
+   "axis": "color",
+   "label": "black",
+   "prompts": [
+    "a person wearing black clothes",
+    "a black coloured outfit"
+   ]
+  },
+  {
+   "axis": "color",
+   "label": "charcoal grey",
+   "prompts": [
+    "a person wearing charcoal grey clothes",
+    "a charcoal grey coloured outfit"
+   ]
+  },
+  {
+   "axis": "color",
+   "label": "light grey",
+   "prompts": [
+    "a person wearing light grey clothes",
+    "a light grey coloured outfit"
+   ]
+  },
+  {
+   "axis": "color",
+   "label": "navy blue",
+   "prompts": [
+    "a person wearing navy blue clothes",
+    "a navy blue coloured outfit"
+   ]
+  },
+  {
+   "axis": "color",
+   "label": "royal blue",
+   "prompts": [
+    "a person wearing royal blue clothes",
+    "a royal blue coloured outfit"
+   ]
+  },
+  {
+   "axis": "color",
+   "label": "sky blue",
+   "prompts": [
+    "a person wearing sky blue clothes",
+    "a sky blue coloured outfit"
+   ]
+  },
+  {
+   "axis": "color",
+   "label": "teal",
+   "prompts": [
+    "a person wearing teal clothes",
+    "a teal coloured outfit"
+   ]
+  },
+  {
+   "axis": "color",
+   "label": "olive green",
+   "prompts": [
+    "a person wearing olive green clothes",
+    "a olive green coloured outfit"
+   ]
+  },
+  {
+   "axis": "color",
+   "label": "emerald green",
+   "prompts": [
+    "a person wearing emerald green clothes",
+    "a emerald green coloured outfit"
+   ]
+  },
+  {
+   "axis": "color",
+   "label": "mint green",
+   "prompts": [
+    "a person wearing mint green clothes",
+    "a mint green coloured outfit"
+   ]
+  },
+  {
+   "axis": "color",
+   "label": "mustard yellow",
+   "prompts": [
+    "a person wearing mustard yellow clothes",
+    "a mustard yellow coloured outfit"
+   ]
+  },
+  {
+   "axis": "color",
+   "label": "saffron orange",
+   "prompts": [
+    "a person wearing saffron orange clothes",
+    "a saffron orange coloured outfit"
+   ]
+  },
+  {
+   "axis": "color",
+   "label": "maroon",
+   "prompts": [
+    "a person wearing maroon clothes",
+    "a maroon coloured outfit"
+   ]
+  },
+  {
+   "axis": "color",
+   "label": "red",
+   "prompts": [
+    "a person wearing red clothes",
+    "a red coloured outfit"
+   ]
+  },
+  {
+   "axis": "color",
+   "label": "pink",
+   "prompts": [
+    "a person wearing pink clothes",
+    "a pink coloured outfit"
+   ]
+  },
+  {
+   "axis": "color",
+   "label": "pastel pink",
+   "prompts": [
+    "a person wearing pastel pink clothes",
+    "a pastel pink coloured outfit"
+   ]
+  },
+  {
+   "axis": "color",
+   "label": "lavender",
+   "prompts": [
+    "a person wearing lavender clothes",
+    "a lavender coloured outfit"
+   ]
+  },
+  {
+   "axis": "color",
+   "label": "purple",
+   "prompts": [
+    "a person wearing purple clothes",
+    "a purple coloured outfit"
+   ]
+  },
+  {
+   "axis": "color",
+   "label": "beige",
+   "prompts": [
+    "a person wearing beige clothes",
+    "a beige coloured outfit"
+   ]
+  },
+  {
+   "axis": "color",
+   "label": "khaki",
+   "prompts": [
+    "a person wearing khaki clothes",
+    "a khaki coloured outfit"
+   ]
+  },
+  {
+   "axis": "color",
+   "label": "brown",
+   "prompts": [
+    "a person wearing brown clothes",
+    "a brown coloured outfit"
+   ]
+  },
+  {
+   "axis": "color",
+   "label": "gold",
+   "prompts": [
+    "a person wearing gold clothes",
+    "a gold coloured outfit"
+   ]
+  },
+  {
+   "axis": "color",
+   "label": "multicolour",
+   "prompts": [
+    "a person wearing multicolour clothes",
+    "a multicolour coloured outfit"
+   ]
+  },
+  {
+   "axis": "color",
+   "label": "peach",
+   "prompts": [
+    "a person wearing peach clothes",
+    "a peach coloured outfit"
+   ]
+  },
+  {
+   "axis": "color",
+   "label": "rust",
+   "prompts": [
+    "a person wearing rust clothes",
+    "a rust coloured outfit"
+   ]
+  },
+  {
+   "axis": "color",
+   "label": "turquoise",
+   "prompts": [
+    "a person wearing turquoise clothes",
+    "a turquoise coloured outfit"
+   ]
+  },
+  {
+   "axis": "pattern",
+   "label": "solid plain",
+   "prompts": [
+    "clothing with a solid plain pattern",
+    "a solid plain outfit"
+   ]
+  },
+  {
+   "axis": "pattern",
+   "label": "vertical stripes",
+   "prompts": [
+    "clothing with a vertical stripes pattern",
+    "a vertical stripes outfit"
+   ]
+  },
+  {
+   "axis": "pattern",
+   "label": "checked plaid",
+   "prompts": [
+    "clothing with a checked plaid pattern",
+    "a checked plaid outfit"
+   ]
+  },
+  {
+   "axis": "pattern",
+   "label": "floral print",
+   "prompts": [
+    "clothing with a floral print pattern",
+    "a floral print outfit"
+   ]
+  },
+  {
+   "axis": "pattern",
+   "label": "paisley print",
+   "prompts": [
+    "clothing with a paisley print pattern",
+    "a paisley print outfit"
+   ]
+  },
+  {
+   "axis": "pattern",
+   "label": "block print",
+   "prompts": [
+    "clothing with a block print pattern",
+    "a block print outfit"
+   ]
+  },
+  {
+   "axis": "pattern",
+   "label": "bandhani tie-dye",
+   "prompts": [
+    "clothing with a bandhani tie-dye pattern",
+    "a bandhani tie-dye outfit"
+   ]
+  },
+  {
+   "axis": "pattern",
+   "label": "ikat",
+   "prompts": [
+    "clothing with a ikat pattern",
+    "a ikat outfit"
+   ]
+  },
+  {
+   "axis": "pattern",
+   "label": "zari embroidery",
+   "prompts": [
+    "clothing with a zari embroidery pattern",
+    "a zari embroidery outfit"
+   ]
+  },
+  {
+   "axis": "pattern",
+   "label": "mirror work",
+   "prompts": [
+    "clothing with a mirror work pattern",
+    "a mirror work outfit"
+   ]
+  },
+  {
+   "axis": "pattern",
+   "label": "polka dots",
+   "prompts": [
+    "clothing with a polka dots pattern",
+    "a polka dots outfit"
+   ]
+  },
+  {
+   "axis": "pattern",
+   "label": "geometric print",
+   "prompts": [
+    "clothing with a geometric print pattern",
+    "a geometric print outfit"
+   ]
+  },
+  {
+   "axis": "vibe",
+   "label": "Work",
+   "prompts": [
+    "office work attire",
+    "business formal outfit",
+    "smart professional workwear"
+   ]
+  },
+  {
+   "axis": "vibe",
+   "label": "Casual",
+   "prompts": [
+    "relaxed casual everyday outfit",
+    "weekend casual clothes",
+    "laid-back streetwear"
+   ]
+  },
+  {
+   "axis": "vibe",
+   "label": "Festive",
+   "prompts": [
+    "festive traditional celebration outfit",
+    "wedding guest attire",
+    "dressy party outfit"
+   ]
+  },
+  {
+   "axis": "vibe",
+   "label": "Travel",
+   "prompts": [
+    "comfortable travel outfit",
+    "airport travel clothes",
+    "practical outfit for sightseeing"
+   ]
+  },
+  {
+   "axis": "season",
+   "label": "Summer/Humid",
+   "prompts": [
+    "breathable outfit for hot humid weather",
+    "light summer clothes for heat"
+   ]
+  },
+  {
+   "axis": "season",
+   "label": "Monsoon",
+   "prompts": [
+    "monsoon outfit for rainy weather",
+    "quick-dry clothes for rain"
+   ]
+  },
+  {
+   "axis": "season",
+   "label": "Mild/Winter",
+   "prompts": [
+    "layered outfit for cool winter weather",
+    "warm clothes for mild cold weather"
+   ]
+  }
+ ]
+}

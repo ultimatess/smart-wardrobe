@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#1f2a44">
+  <title>Smart Wardrobe</title>
+  <link rel="manifest" href="/static/manifest.webmanifest">
+  <link rel="icon" href="/static/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Smart Wardrobe</h1>
+    <span id="status" class="muted">local &middot; offline</span>
+  </header>
+
+  <nav>
+    <button class="tab active" data-view="today">Today</button>
+    <button class="tab" data-view="wardrobe">Wardrobe</button>
+    <button class="tab" data-view="collections">Collections</button>
+    <button class="tab" data-view="import">Import</button>
+  </nav>
+
+  <main>
+    <!-- TODAY -->
+    <section id="view-today" class="view active">
+      <div class="pills" id="vibes">
+        <button class="pill active" data-vibe="Work">🏢 Work</button>
+        <button class="pill" data-vibe="Casual">☕ Casual</button>
+        <button class="pill" data-vibe="Festive">✨ Festive</button>
+        <button class="pill" data-vibe="Travel">✈️ Travel</button>
+      </div>
+      <div class="weather">
+        <label>Temp °C <input id="temp" type="number" step="1" placeholder="—"></label>
+        <label>Humidity % <input id="humidity" type="number" step="1" placeholder="—"></label>
+        <label class="check"><input id="rain" type="checkbox"> Rain</label>
+        <label>Venue <select id="venue"><option value="">Anywhere</option></select></label>
+        <button id="rename-venue" class="ghost" title="Name this place">✎</button>
+        <button id="auto-weather" class="ghost" title="Requires WARDROBE_ALLOW_WEATHER=1">Auto weather</button>
+        <button id="go" class="primary">Suggest</button>
+      </div>
+      <p id="context" class="muted"></p>
+      <div id="recs" class="cards"></div>
+    </section>
+
+    <!-- WARDROBE -->
+    <section id="view-wardrobe" class="view">
+      <div class="toolbar">
+        <input id="search" type="search" placeholder="Search e.g. 'maroon silk kurta'">
+        <select id="f-vibe"><option value="">All vibes</option></select>
+        <select id="f-season"><option value="">All seasons</option></select>
+      </div>
+      <div id="grid" class="grid"></div>
+    </section>
+
+    <!-- COLLECTIONS -->
+    <section id="view-collections" class="view">
+      <div id="cols"></div>
+    </section>
+
+    <!-- IMPORT -->
+    <section id="view-import" class="view">
+      <div class="panel">
+        <h3>1. Reference selfie</h3>
+        <p class="muted">One clear photo of your face. Used only on this device to find you in group shots.</p>
+        <input id="selfie" type="file" accept="image/*">
+        <span id="selfie-state" class="muted"></span>
+      </div>
+      <div class="panel">
+        <h3>2. Add photos</h3>
+        <p class="muted">Pick camera-roll photos, or drop files into <code>data/raw_gallery/</code> and scan.</p>
+        <input id="photos" type="file" accept="image/*" multiple>
+        <button id="scan" class="primary">Scan gallery folder</button>
+      </div>
+      <pre id="log" class="log"></pre>
+    </section>
+  </main>
+
+  <dialog id="detail"><form method="dialog"><div id="detail-body"></div>
+    <menu><button value="close">Close</button></menu></form></dialog>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
