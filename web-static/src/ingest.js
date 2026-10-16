@@ -40,7 +40,8 @@ export function cropCanvas(src, b) {
   c.getContext("2d").drawImage(src, b.x0, b.y0, c.width, c.height, 0, 0, c.width, c.height);
   return c;
 }
-const toJpeg = (c) => new Promise((res) => c.toBlob(res, "image/jpeg", 0.88));
+// Stored as raw bytes: WebKit (Safari and every iOS browser) can't put Blobs in IndexedDB.
+const toJpeg = (c) => new Promise((res) => c.toBlob(res, "image/jpeg", 0.88)).then((b) => b.arrayBuffer());
 const imageData = (c) => c.getContext("2d").getImageData(0, 0, c.width, c.height);
 
 export class Ingestor {

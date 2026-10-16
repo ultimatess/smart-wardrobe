@@ -45,11 +45,14 @@ export async function health() {
   return { outfits: outfits.length, reference_selfie: !!selfie, vibes: VIBES, seasons: SEASONS, device };
 }
 
+// Crops are JPEG bytes (ArrayBuffer); older Chrome-only installs stored Blobs, so accept both.
+export const cropBlob = (crop) => (crop instanceof Blob ? crop : new Blob([crop], { type: "image/jpeg" }));
 const urls = new Map();
 export function cropUrl(o) {
-  const k = `${o.id}:${o.crop?.size}`;
-  if (!urls.has(k) && o.crop) urls.set(k, URL.createObjectURL(o.crop));
-  return urls.get(k) || "";
+  if (!o?.crop) return "";
+  const k = `${o.id}:${o.crop.size ?? o.crop.byteLength}`;
+  if (!urls.has(k)) urls.set(k, URL.createObjectURL(cropBlob(o.crop)));
+  return urls.get(k);
 }
 const pub = (o) => ({ ...o, crop_url: cropUrl(o), embedding: undefined, crop: undefined });
 
@@ -172,7 +175,7 @@ export async function exportBackup() {
   const dump = { format: "smart-wardrobe-backup", version: 1, exported_at: new Date().toISOString() };
   for (const s of ["outfits", "wears", "photos", "regions", "venues"]) {
     dump[s] = await Promise.all((await store.all(s)).map(async (r) => ({
-      ...r, embedding: r.embedding ? Array.from(r.embedding) : undefined, crop: r.crop ? await b64(r.crop) : undefined,
+      ...r, embedding: r.embedding ? Array.from(r.embedding) : undefined, crop: r.crop ? await b64(cropBlob(r.crop)) : undefined,
     })));
   }
   const selfie = await store.get("meta", "selfie");
@@ -186,7 +189,7 @@ export async function importBackup(file) {
   for (const s of ["outfits", "wears", "photos", "regions", "venues"])
     for (const r of dump[s] || []) {
       if (r.embedding) r.embedding = Float32Array.from(r.embedding);
-      if (r.crop) r.crop = await (await fetch(r.crop)).blob();
+      if (r.crop) r.crop = await (await fetch(r.crop)).arrayBuffer();
       await store.put(s, r);
     }
   if (dump.selfie) {

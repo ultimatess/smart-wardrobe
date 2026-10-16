@@ -3,89 +3,153 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#1f2a44">
-  <meta name="description" content="Private, on-device outfit recommender. Photos never leave your browser.">
+  <meta name="theme-color" content="#f7f5f2" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0e0f13" media="(prefers-color-scheme: dark)">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="description" content="Private, on-device outfit recommender. Photos never leave your device.">
   <title>Smart Wardrobe</title>
   <link rel="manifest" href="./manifest.webmanifest">
   <link rel="icon" href="./icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./icon.svg">
   <link rel="stylesheet" href="./src/styles.css">
 </head>
 <body>
-  <header>
-    <h1>Smart Wardrobe</h1>
-    <span id="status" class="muted">on-device · private</span>
-  </header>
-  <div id="banner" class="banner"></div>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+    <symbol id="i-hanger" viewBox="0 0 24 24"><path d="M12 7a2 2 0 1 1 2-2c0 1-1 1.6-2 2.2V9l8.6 5.3c1.2.8.7 2.7-.8 2.7H4.2c-1.5 0-2-1.9-.8-2.7L12 9"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12 3 9 5-9 5-9-5 9-5z"/><path d="m3 13 9 5 9-5"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 9v4M12 17h.01"/><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></symbol>
+    <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M17.5 19H7a5 5 0 1 1 .9-9.9A6 6 0 0 1 19 11a4 4 0 0 1-1.5 8z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+    <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/><path d="M19 17l.7 2 2 .7-2 .7-.7 2-.7-2-2-.7 2-.7z"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></symbol>
+    <symbol id="i-image" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="9" cy="9" r="2"/><path d="m21 15-5-5L5 21"/></symbol>
+    <symbol id="i-drop" viewBox="0 0 24 24"><path d="M12 2.7S5 10 5 14.5a7 7 0 0 0 14 0C19 10 12 2.7 12 2.7z"/></symbol>
+    <symbol id="i-thermo" viewBox="0 0 24 24"><path d="M14 14.8V4a2 2 0 0 0-4 0v10.8a4 4 0 1 0 4 0z"/></symbol>
+    <symbol id="i-edit" viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></symbol>
+    <symbol id="i-upload" viewBox="0 0 24 24"><path d="M12 21V9M7 14l5-5 5 5M5 3h14"/></symbol>
+    <symbol id="i-trash" viewBox="0 0 24 24"><path d="M3 6h18M8 6V4h8v2M6 6l1 14h10l1-14"/></symbol>
+  </svg>
 
-  <nav>
-    <button class="tab active" data-view="today">Today</button>
-    <button class="tab" data-view="wardrobe">Wardrobe</button>
-    <button class="tab" data-view="collections">Collections</button>
-    <button class="tab" data-view="import">Import</button>
+  <div class="shell">
+    <aside class="sidebar">
+      <div class="brand"><span class="logo"><svg><use href="#i-hanger"/></svg></span><span>Wardrobe</span></div>
+      <nav class="nav" aria-label="Main">
+        <button class="nav-btn active" data-view="today"><svg><use href="#i-sun"/></svg><span>Today</span></button>
+        <button class="nav-btn" data-view="wardrobe"><svg><use href="#i-hanger"/></svg><span>Wardrobe</span></button>
+        <button class="nav-btn" data-view="collections"><svg><use href="#i-layers"/></svg><span>Collections</span></button>
+        <button class="nav-btn" data-view="import"><svg><use href="#i-plus"/></svg><span>Add</span></button>
+      </nav>
+      <div class="privacy"><svg><use href="#i-lock"/></svg><div><b>On-device</b><span id="status">Private · nothing uploaded</span></div></div>
+    </aside>
+
+    <main class="main">
+      <div id="model-card" class="model-card" hidden>
+        <div class="model-row"><svg class="spin"><use href="#i-sparkle"/></svg><span id="model-text">Preparing…</span></div>
+        <div class="progress"><i id="model-bar"></i></div>
+      </div>
+
+      <!-- TODAY -->
+      <section id="view-today" class="view active">
+        <header class="page-head">
+          <div>
+            <p class="eyebrow" id="today-date"></p>
+            <h1 id="greeting">Good morning</h1>
+          </div>
+          <button id="ctx-toggle" class="chip-btn" aria-expanded="false"><svg><use href="#i-cloud"/></svg><span id="ctx-summary">Set weather</span></button>
+        </header>
+
+        <div class="segmented" id="vibes" role="tablist" aria-label="Vibe">
+          <button data-vibe="Work" role="tab">🏢<span>Work</span></button>
+          <button data-vibe="Casual" role="tab">☕<span>Casual</span></button>
+          <button data-vibe="Festive" role="tab">✨<span>Festive</span></button>
+          <button data-vibe="Travel" role="tab">✈️<span>Travel</span></button>
+        </div>
+
+        <div id="ctx-panel" class="ctx-panel" hidden>
+          <div class="field stepper"><label for="temp"><svg><use href="#i-thermo"/></svg>Temperature</label>
+            <div><button data-step="temp:-1" aria-label="Colder">−</button><input id="temp" type="number" inputmode="numeric" placeholder="—"><span class="unit">°C</span><button data-step="temp:1" aria-label="Warmer">+</button></div></div>
+          <div class="field stepper"><label for="humidity"><svg><use href="#i-drop"/></svg>Humidity</label>
+            <div><button data-step="humidity:-5" aria-label="Drier">−</button><input id="humidity" type="number" inputmode="numeric" placeholder="—"><span class="unit">%</span><button data-step="humidity:5" aria-label="More humid">+</button></div></div>
+          <div class="field"><label for="rain">Rain</label><label class="switch"><input id="rain" type="checkbox"><i></i></label></div>
+          <div class="field"><label for="venue"><svg><use href="#i-pin"/></svg>Venue</label>
+            <div class="venue-row"><select id="venue"><option value="">Anywhere</option></select><button id="rename-venue" class="icon-btn" aria-label="Name this place"><svg><use href="#i-edit"/></svg></button></div></div>
+          <div class="ctx-actions"><button id="auto-weather" class="btn ghost"><svg><use href="#i-cloud"/></svg>Use my weather</button><button id="go" class="btn primary">Update picks</button></div>
+        </div>
+
+        <div id="recs" class="recs"></div>
+        <p id="context" class="query muted"></p>
+      </section>
+
+      <!-- WARDROBE -->
+      <section id="view-wardrobe" class="view">
+        <header class="page-head"><div><p class="eyebrow">Your collection</p><h1>Wardrobe</h1></div><span id="count-badge" class="badge"></span></header>
+        <div class="search"><svg><use href="#i-search"/></svg><input id="search" type="search" placeholder="Search “maroon silk kurta”, “rainy day office”…" autocomplete="off"></div>
+        <div class="filters" id="filters"></div>
+        <div id="grid" class="grid"></div>
+      </section>
+
+      <!-- COLLECTIONS -->
+      <section id="view-collections" class="view">
+        <header class="page-head"><div><p class="eyebrow">Auto-curated</p><h1>Collections</h1></div></header>
+        <div id="cols"></div>
+      </section>
+
+      <!-- IMPORT -->
+      <section id="view-import" class="view">
+        <header class="page-head"><div><p class="eyebrow">Analysed on this device</p><h1>Add outfits</h1></div></header>
+        <div class="steps">
+          <div class="step-card" id="selfie-card">
+            <div class="step-num">1</div>
+            <div class="step-body">
+              <h3>Reference selfie</h3>
+              <p class="muted">One clear face photo so we can find you in group shots. Stays on this device.</p>
+              <label class="btn ghost file"><svg><use href="#i-user"/></svg><span id="selfie-label">Choose selfie</span><input id="selfie" type="file" accept="image/*"></label>
+            </div>
+            <img id="selfie-thumb" class="selfie-thumb" alt="" hidden>
+          </div>
+          <label class="dropzone" id="dropzone">
+            <input id="photos" type="file" accept="image/*" multiple>
+            <svg><use href="#i-image"/></svg>
+            <b>Add outfit photos</b>
+            <span class="muted">Tap to pick from your library<span class="desk-only">, or drop photos here</span>. 20–50 is a great start.</span>
+          </label>
+        </div>
+        <div id="ingest" class="ingest" hidden>
+          <div class="ingest-head"><b id="ingest-title">Analysing…</b><span id="ingest-count" class="muted"></span></div>
+          <div class="progress"><i id="ingest-bar"></i></div>
+          <ul id="ingest-list" class="ingest-list"></ul>
+          <p id="ingest-stats" class="muted small"></p>
+        </div>
+        <div class="data-card">
+          <div><h3>Your data</h3><p class="muted">Stored only in this browser. Export a backup before clearing site data or switching devices.</p></div>
+          <div class="data-actions">
+            <button id="export" class="btn ghost"><svg><use href="#i-download"/></svg>Export</button>
+            <button id="import-btn" class="btn ghost"><svg><use href="#i-upload"/></svg>Import</button>
+            <input id="import-backup" type="file" accept="application/json" hidden>
+            <button id="wipe" class="btn ghost danger"><svg><use href="#i-trash"/></svg>Delete all</button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <nav class="tabbar" aria-label="Main">
+    <button class="tab-btn active" data-view="today"><svg><use href="#i-sun"/></svg><span>Today</span></button>
+    <button class="tab-btn" data-view="wardrobe"><svg><use href="#i-hanger"/></svg><span>Wardrobe</span></button>
+    <button class="tab-btn" data-view="collections"><svg><use href="#i-layers"/></svg><span>Collections</span></button>
+    <button class="tab-btn" data-view="import"><svg><use href="#i-plus"/></svg><span>Add</span></button>
   </nav>
 
-  <main>
-    <section id="view-today" class="view active">
-      <div class="pills" id="vibes">
-        <button class="pill active" data-vibe="Work">🏢 Work</button>
-        <button class="pill" data-vibe="Casual">☕ Casual</button>
-        <button class="pill" data-vibe="Festive">✨ Festive</button>
-        <button class="pill" data-vibe="Travel">✈️ Travel</button>
-      </div>
-      <div class="weather">
-        <label>Temp °C <input id="temp" type="number" step="1" placeholder="—"></label>
-        <label>Humidity % <input id="humidity" type="number" step="1" placeholder="—"></label>
-        <label class="check"><input id="rain" type="checkbox"> Rain</label>
-        <label>Venue <select id="venue"><option value="">Anywhere</option></select></label>
-        <button id="rename-venue" class="ghost" title="Name this place">✎</button>
-        <button id="auto-weather" class="ghost" title="Sends a ~11 km rounded location to open-meteo.com">Auto weather</button>
-        <button id="go" class="primary">Suggest</button>
-      </div>
-      <p id="context" class="muted"></p>
-      <div id="recs" class="cards"></div>
-    </section>
-
-    <section id="view-wardrobe" class="view">
-      <div class="toolbar">
-        <input id="search" type="search" placeholder="Search e.g. 'maroon silk kurta'">
-        <select id="f-vibe"><option value="">All vibes</option></select>
-        <select id="f-season"><option value="">All seasons</option></select>
-      </div>
-      <div id="grid" class="grid"></div>
-    </section>
-
-    <section id="view-collections" class="view"><div id="cols"></div></section>
-
-    <section id="view-import" class="view">
-      <div class="panel">
-        <h3>1. Reference selfie</h3>
-        <p class="muted">One clear photo of your face, used only in this browser to find you in group shots.</p>
-        <input id="selfie" type="file" accept="image/*">
-        <span id="selfie-state" class="muted"></span>
-      </div>
-      <div class="panel">
-        <h3>2. Add photos</h3>
-        <p class="muted">Pick 20–50 camera-roll photos. They are analysed on this device and never uploaded.
-          (HEIC needs Safari; in Chrome use JPEG/PNG.)</p>
-        <input id="photos" type="file" accept="image/*" multiple>
-        <div class="bar"><i id="ingest-bar"></i></div>
-      </div>
-      <div class="panel">
-        <h3>Your data</h3>
-        <p class="muted">Stored in this browser only. Export a backup before clearing site data or switching devices.</p>
-        <div class="row-btns">
-          <button id="export" class="ghost">Export backup</button>
-          <button id="import-btn" class="ghost">Import backup</button>
-          <input id="import-backup" type="file" accept="application/json" hidden>
-          <button id="wipe" class="ghost danger">Delete all data</button>
-        </div>
-      </div>
-      <pre id="log" class="log"></pre>
-    </section>
-  </main>
-
-  <dialog id="detail"><form method="dialog"><div id="detail-body"></div>
-    <menu><button value="close">Close</button></menu></form></dialog>
+  <dialog id="sheet" class="sheet"><div class="sheet-grip"></div><button class="sheet-close icon-btn" aria-label="Close"><svg><use href="#i-x"/></svg></button><div id="sheet-body"></div></dialog>
+  <div id="toasts" class="toasts" aria-live="polite"></div>
 
   <script type="module" src="./src/main.js"></script>
 </body>

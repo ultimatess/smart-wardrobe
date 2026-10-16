@@ -1,0 +1,15 @@
+import puppeteer from "puppeteer-core";
+const b = await puppeteer.launch({ executablePath: "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome", headless: "new", args: ["--enable-unsafe-webgpu"] });
+const p = await b.newPage();
+const logs = [];
+p.on("console", (m) => logs.push(`[${m.type()}] ${m.text()}`));
+p.on("pageerror", (e) => logs.push(`[pageerror] ${e.message}`));
+p.on("requestfailed", (r) => logs.push(`[reqfail] ${r.url()} ${r.failure()?.errorText}`));
+p.on("response", (r) => r.status() >= 400 && logs.push(`[http ${r.status()}] ${r.url()}`));
+await p.goto("https://ultimatess.github.io/smart-wardrobe/", { waitUntil: "load" });
+await (await p.$("#photos")).uploadFile("/tmp/e2e_photos/portrait.jpg", "/tmp/e2e_photos/business-person.png");
+await p.waitForFunction(() => { const t = document.querySelector("#log").textContent; return t.startsWith("Processed") || /error|Error|failed/i.test(t); }, { timeout: 900e3 }).catch(() => logs.push("TIMEOUT"));
+console.log("LOG:\n" + await p.$eval("#log", (e) => e.textContent));
+console.log("BANNER:", await p.$eval("#banner", (e) => e.textContent));
+console.log("CONSOLE:\n" + logs.filter((l) => !l.includes("XNNPACK")).join("\n"));
+await b.close();

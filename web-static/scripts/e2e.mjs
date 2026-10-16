@@ -26,33 +26,55 @@ try {
   console.log("webgpu:", await page.evaluate(async () => !!(navigator.gpu && (await navigator.gpu.requestAdapter()))));
 
   const t0 = Date.now();
+  await page.click('.nav-btn[data-view="import"]');
   if (selfie) {
     await (await page.$("#selfie")).uploadFile(selfie);
-    await page.waitForFunction(() => document.querySelector("#selfie-state").textContent.length > 0, { timeout: 20 * 60e3 });
-    const st = await page.$eval("#selfie-state", (e) => e.textContent);
-    console.log("--- selfie:", st);
-    if (!st.includes("Saved")) failed = true;
+    await page.waitForFunction(() => !document.querySelector("#selfie-thumb").hidden || /toast warn/.test(document.querySelector("#toasts").innerHTML), { timeout: 20 * 60e3 });
+    const ok = await page.$eval("#selfie-thumb", (e) => !e.hidden);
+    console.log("--- selfie:", ok ? "saved" : await page.$eval("#toasts", (e) => e.textContent));
+    if (!ok) failed = true;
   }
   await (await page.$("#photos")).uploadFile(...photos);
-  await page.waitForFunction(() => document.querySelector("#log").textContent.startsWith("Processed")
-    || /Error|error/.test(document.querySelector("#log").textContent.split("\n")[0]), { timeout: 20 * 60e3 });
-  const log = await page.$eval("#log", (e) => e.textContent);
-  console.log(`--- ingest (${((Date.now() - t0) / 1000).toFixed(0)} s incl. first-visit model download)\n${log}`);
-  if (!log.startsWith("Processed")) failed = true;
+  await page.waitForFunction(() => /^(Done|Couldn|Nothing)/.test(document.querySelector("#ingest-title").textContent), { timeout: 20 * 60e3 });
+  const title = await page.$eval("#ingest-title", (e) => e.textContent);
+  const rows = await page.$$eval("#ingest-list li", (li) => li.map((x) => x.innerText.replace(/\n/g, " | ")));
+  console.log(`--- ingest (${((Date.now() - t0) / 1000).toFixed(0)} s incl. first-visit model download): ${title}\n`
+    + `${await page.$eval("#ingest-stats", (e) => e.textContent)}\n${rows.join("\n")}`);
+  await page.screenshot({ path: "/tmp/web_static_import.png" });
+  if (title !== "Done") failed = true;
 
-  await page.click('.tab[data-view="today"]');
-  await page.click('.pill[data-vibe="Work"]');
-  await page.waitForSelector("#recs .card", { timeout: 120e3 });
-  const recs = await page.$$eval("#recs .card h4", (h) => h.map((x) => x.textContent));
+  await page.click('.nav-btn[data-view="today"]');
+  await page.click('#vibes button[data-vibe="Work"]');
+  await page.waitForSelector("#recs .rec", { timeout: 120e3 });
+  const recs = await page.$$eval("#recs .rec h3", (h) => h.map((x) => x.textContent));
   console.log("--- top picks:", recs);
   await page.screenshot({ path: "/tmp/web_static_today.png" });
 
   await page.reload({ waitUntil: "load" });
-  await page.waitForFunction(() => /\d+ outfits/.test(document.querySelector("#status").textContent));
+  await page.waitForFunction(() => /\d+ outfits?/.test(document.querySelector("#status").textContent));
   console.log("--- after reload:", await page.$eval("#status", (e) => e.textContent));
-  await page.click('.tab[data-view="wardrobe"]');
+  await page.waitForSelector("#recs .rec", { timeout: 120e3 });
+  await page.click('.nav-btn[data-view="wardrobe"]');
   await page.waitForSelector("#grid .tile");
   await page.screenshot({ path: "/tmp/web_static_wardrobe.png" });
+  await page.click("#grid .tile");
+  await page.waitForSelector("#sheet[open] .detail");
+  await new Promise((r) => setTimeout(r, 400));
+  await page.screenshot({ path: "/tmp/web_static_detail.png" });
+  await page.click(".sheet-close");
+  // mobile layout
+  await page.setViewport({ width: 390, height: 844, deviceScaleFactor: 2, isMobile: true, hasTouch: true });
+  await page.click('.tab-btn[data-view="today"]');
+  await page.waitForSelector("#recs .rec", { timeout: 120e3 });
+  await new Promise((r) => setTimeout(r, 600));
+  await page.screenshot({ path: "/tmp/web_static_mobile_today.png" });
+  await page.click('.tab-btn[data-view="wardrobe"]');
+  await page.waitForSelector("#grid .tile");
+  await page.screenshot({ path: "/tmp/web_static_mobile_wardrobe.png" });
+  await page.click("#grid .tile");
+  await page.waitForSelector("#sheet[open]");
+  await new Promise((r) => setTimeout(r, 400));
+  await page.screenshot({ path: "/tmp/web_static_mobile_detail.png" });
   if (errors.length) { console.log("--- page errors:\n" + errors.join("\n")); }
 } catch (e) {
   failed = true;
